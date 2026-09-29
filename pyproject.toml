@@ -1,0 +1,23 @@
+[project]
+name = "project-segmentation"
+version = "0.1.0"
+description = "Here, I will segment the teeth using the YOLO model"
+readme = "README.md"
+authors = [
+    { name = "EddyGiusepe", email = "eddychirinos.unac@gmail.com" }
+]
+requires-python = ">=3.13.7, <3.14"
+dependencies = [
+    "ipykernel==7.4.0",
+    "ipywidgets==8.1.9",
+    "kagglehub==1.0.2",
+    "tqdm==4.70.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff==0.16.9",
+]
+
+[tool.ruff]
+extend = "ruff.toml"
