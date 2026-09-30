@@ -11,7 +11,11 @@ dependencies = [
     "ipykernel==7.4.0",
     "ipywidgets==8.1.9",
     "kagglehub==1.0.2",
+    "matplotlib==3.11.2",
+    "pillow==12.3.0",
+    "torch==2.14.0",
     "tqdm==4.70.1",
+    "ultralytics==8.4.166",
 ]
 
 [dependency-groups]
