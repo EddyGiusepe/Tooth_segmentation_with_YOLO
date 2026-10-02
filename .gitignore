@@ -220,3 +220,7 @@ __marimo__/
 
 # EddyGiusepe:
 yolo_dataset/
+.env
+yolov8m-seg.pt
+runs/
+wandb/
