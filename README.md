@@ -6,7 +6,7 @@ Automatic tooth segmentation in panoramic radiographs using YOLO
 
 
 
-
+![](original_predict.png)
 
 
 
