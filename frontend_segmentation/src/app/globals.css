@@ -1,0 +1,65 @@
+/**
+ * Senior Data Scientist/AI Engineering.: Dr. Eddy Giusepe Chirinos Isidro
+ *
+ * globals.css
+ * ===========
+ * Global styles for the Dental Segmentation application.
+ * Supports dark (default) and light themes via CSS custom properties.
+ * next-themes applies the "dark" class to <html>; Tailwind v4 respects
+ * it through the @custom-variant declaration below.
+ */
+
+@import "tailwindcss";
+
+/* Tailwind v4: enable "dark:" utilities based on the .dark class on <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ── Dark theme (default) ────────────────────────────────────────────────── */
+:root {
+  --bg-primary:   #0f1117;
+  --bg-secondary: #1a1d27;
+  --bg-card:      #1e2130;
+  --border:       #2a2f45;
+  --accent:       #3b82f6;
+  --accent-hover: #2563eb;
+  --text-primary: #f1f5f9;
+  --text-muted:   #94a3b8;
+  --success:      #22c55e;
+  --danger:       #ef4444;
+}
+
+/* ── Light theme ─────────────────────────────────────────────────────────── */
+/* Applied when next-themes removes the .dark class from <html>              */
+:root.light {
+  --bg-primary:   #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-card:      #ffffff;
+  --border:       #e2e8f0;
+  --accent:       #2563eb;
+  --accent-hover: #1d4ed8;
+  --text-primary: #0f172a;
+  --text-muted:   #64748b;
+  --success:      #16a34a;
+  --danger:       #dc2626;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar        { width: 6px; }
+::-webkit-scrollbar-track  { background: var(--bg-secondary); }
+::-webkit-scrollbar-thumb  { background: var(--border); border-radius: 3px; }

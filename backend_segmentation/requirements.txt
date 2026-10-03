@@ -1,0 +1,16 @@
+# Backend — Dental Segmentation API
+# Versões pinadas em 2026-10-02
+#
+# Instalar:
+#   pip install -r requirements.txt
+#
+# Nota: torch não é pinado aqui intencionalmente.
+# O Ultralytics instala o PyTorch correto para a plataforma
+# (CPU vs CUDA) automaticamente como dependência transitiva.
+
+fastapi==0.142.2
+uvicorn[standard]==0.54.0
+python-multipart==0.0.32
+ultralytics==8.4.166
+pillow==12.3.0
+python-dotenv==1.2.4
